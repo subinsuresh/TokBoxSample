@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Te2-5R-i53">
+    <device id="retina4_7" orientation="landscape">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Publisher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T9n-mk-jEt">
+                                <rect key="frame" x="268.5" y="222.5" width="130" height="30"/>
+                                <color key="backgroundColor" red="0.91764705879999997" green="0.10980392160000001" blue="0.1647058824" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="RYs-Mi-fa5"/>
+                                    <constraint firstAttribute="height" constant="30" id="o7x-NG-wq2"/>
+                                </constraints>
+                                <state key="normal" title="SUBSCRIBE">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="25i-PE-4We" kind="show" id="a5c-ZY-FCJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXH-c9-XW3">
+                                <rect key="frame" x="268.5" y="122.5" width="130" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.16862745100000001" blue="0.50196078430000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="130" id="fzj-Q4-2em"/>
+                                    <constraint firstAttribute="height" constant="30" id="lO0-OM-sLP"/>
+                                </constraints>
+                                <state key="normal" title="PUBLISH">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Mmd-ES-mPY" kind="show" id="ugu-HF-byB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tXH-c9-XW3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="IaJ-rA-8Dg"/>
+                            <constraint firstItem="T9n-mk-jEt" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="50" id="Yyk-4d-Pl0"/>
+                            <constraint firstItem="tXH-c9-XW3" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" constant="-50" id="oPB-z9-aPk"/>
+                            <constraint firstItem="T9n-mk-jEt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="pKd-jQ-IVg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="j2R-ae-pH7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="964" y="35.532233883058474"/>
+        </scene>
+        <!--Publish View Controller-->
+        <scene sceneID="8Pa-qy-V3K">
+            <objects>
+                <viewController id="Mmd-ES-mPY" customClass="PublishViewController" customModule="Publisher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GVG-o0-GlF"/>
+                        <viewControllerLayoutGuide type="bottom" id="cOY-ck-VVo"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Zcj-eJ-lPZ">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4H7-C0-j0g">
+                                <rect key="frame" x="587" y="157" width="60" height="60"/>
+                                <color key="backgroundColor" red="0.85098039219999999" green="0.10980392160000001" blue="0.16078431369999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="11l-8Z-HjP"/>
+                                    <constraint firstAttribute="height" constant="60" id="dR1-TL-mOp"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="START">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startStopButtonWithButton:" destination="Mmd-ES-mPY" eventType="touchUpInside" id="dfQ-g6-5tH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="4H7-C0-j0g" firstAttribute="centerY" secondItem="Zcj-eJ-lPZ" secondAttribute="centerY" id="1t9-Im-s3e"/>
+                            <constraint firstItem="4H7-C0-j0g" firstAttribute="trailing" secondItem="Zcj-eJ-lPZ" secondAttribute="trailingMargin" id="6M5-dn-Zm9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="startStopButton" destination="4H7-C0-j0g" id="wnS-wb-uil"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QL-fN-yES" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1862.5187406296852" y="32.799999999999997"/>
+        </scene>
+        <!--Subscibe View Controller-->
+        <scene sceneID="Mb0-d6-BRm">
+            <objects>
+                <viewController id="25i-PE-4We" customClass="SubscibeViewController" customModule="Publisher" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8Hh-MS-GHj"/>
+                        <viewControllerLayoutGuide type="bottom" id="m25-6b-WTE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="63q-1B-ksg">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sample.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="9Mj-IL-GBA">
+                                <rect key="frame" x="0.0" y="64" width="667" height="311"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="9Mj-IL-GBA" secondAttribute="trailing" id="0WG-M8-UZP"/>
+                            <constraint firstItem="m25-6b-WTE" firstAttribute="top" secondItem="9Mj-IL-GBA" secondAttribute="bottom" id="6cd-QU-PxM"/>
+                            <constraint firstItem="9Mj-IL-GBA" firstAttribute="top" secondItem="8Hh-MS-GHj" secondAttribute="bottom" id="m1r-eW-gVe"/>
+                            <constraint firstItem="9Mj-IL-GBA" firstAttribute="leading" secondItem="63q-1B-ksg" secondAttribute="leading" id="ygs-QL-yhq"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mML-yb-shh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1863" y="929"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Gb8-Ed-Zwy">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Te2-5R-i53" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="inc-d3-KNQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="LjV-L7-hou"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MYt-QU-A4E" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="24.800000000000001" y="35.532233883058474"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sample.jpg" width="2431" height="1368"/>
+    </resources>
+</document>
